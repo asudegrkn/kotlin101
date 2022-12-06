@@ -1,2 +1,124 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+import java.lang.NullPointerException
+
+
+fun main(args: Array<String>) {
+   /* var sum = 50
+    val div = { num: Int -> num / 2 }
+    println(div(sum))*/
+    /*val rakamNotu = 100
+    val harfNotu = s(rakamNotu)  //s()
+    println("harf notu = ${harfNotu == "Girilen sayı notu hatalı"}")
+    println("harf notu = $harfNotu")
+    geriDonusDegeriYok()
+    hata()
+    `cumle iceren fonksiyon`()
+}
+
+private fun s(rakamNotu: Int = 23) =
+    when (rakamNotu) {
+        in 90..100 -> "AA"
+        in 80..89 -> "BA"
+        else -> "Girilen sayı notu hatalı"
+    }
+   //unit fonksiyon
+private fun geriDonusDegeriYok() {
+       println("geri dönüş değeri olmayan fonksiyon")
+
+   }
+private fun hata():Nothing {
+    throw NotImplementedError()
+    println("bu ifadeye erişilemez")
+
+}
+//backtick
+private fun `cumle iceren fonksiyon`(){
+    println()
+}
+
+val tumHarfSayisi = "BA".count()
+    println(tumHarfSayisi)
+
+val harfSayisi ="BA".count(
+    {harf -> harf=="A"})    
+
+    println(harfSayisi)*/
+
+/*
+    var d = 10
+    when (d)
+    {
+        10 -> println("10")
+        in 1..100 -> println("1-100")
+        !in 1..5 -> println("1-5")
+    }
+*/
+/*fun hello(name : String?) {
+    println("Hey there!")
+}*/
+/*val harfSayisi = "baaba".count(
+    {harf -> harf == 'a'}
+
+    )
+println(harfSayisi)*/
+/*
+val anonimHarfNotu:(Int)-> String ={
+when(it){
+in 90..100 -> "aa"
+in 80..70 -> "ba"
+ else -> "hata"
+}}
+println(anonimHarfNotu(1))}
+*/}
+/*
+inline fun ogrenciFonk(adi: String, foksPar: (Int, String) -> String){
+ println("adi: $adi " + foksPar(30, "dd"))
+}
+
+ fun fonkGeriDondurme() : (String) -> String {
+  return{ders->
+        val adi = "ali"
+"dersin adı: $adi $ders"}}*/
+
+   /* var name : String? = null
+    name = "Halil"
+    println(name)
+    }*/
+
+ /*    var rakam:Int? = null1
+    try{
+        if(rakam == null) {
+            throw NullPointerException()
+            } else{
+                 println(rakam)
+            }
+        }catch(hata:Exception){
+            println(hata)
+            }
+        }}*/
+val str = "merhaba kotlin"
+printl(str.substring(8,14))
+val veri = "ali can 1234".split("")
+val adi = veri[0]
+val soyadi = veri[1]
+val numara = [2]
+
+ var tumVeri = veri.joinToString()
+println(tumVeri)
+tumVeri = tumVeri.replace(Regex("[Aa]")){
+when(it.value){
+"a" -> "b"
+"A" -> "B"
+else it.value}}
+println(tumVeri)
+
+
+val içerik = "kotlin "
+val menuDosya = File("menu.txt").apply {
+setReadable(true)
+setWritable(true)
+setExecutable(false)
+writeText(icerik)  //yazma
+}
+
+val okunan = menuDosya.readText()  //okuma
+println("dosyadan okunan:"+okunan)
